@@ -1,0 +1,125 @@
+/* =============================================
+   SECCIÓN: BANNER DE EMERGENCIA
+   ============================================= */
+.emergency-banner {
+    background: linear-gradient(135deg, #E6000B 0%, #b30008 100%);
+    padding: 40px 24px;
+    position: relative;
+    overflow: hidden;
+}
+
+.emergency-banner::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -10%;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+    border-radius: 50%;
+    animation: emergency-pulse 2s infinite;
+}
+
+@keyframes emergency-pulse {
+    0%, 100% { transform: scale(1); opacity: 0.5; }
+    50% { transform: scale(1.5); opacity: 0; }
+}
+
+.emergency-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+    position: relative;
+    z-index: 1;
+}
+
+.emergency-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.emergency-icon {
+    font-size: 48px;
+    animation: shake 0.5s infinite;
+}
+
+@keyframes shake {
+    0%, 100% { transform: rotate(0deg); }
+    25% { transform: rotate(-10deg); }
+    75% { transform: rotate(10deg); }
+}
+
+.emergency-content h2 {
+    font-size: 26px;
+    font-weight: 800;
+    color: #FFFFFF;
+    margin-bottom: 4px;
+}
+
+.emergency-content p {
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.9);
+    margin: 0;
+}
+
+.emergency-actions {
+    display: flex;
+    gap: 12px;
+    flex-shrink: 0;
+}
+
+.emergency-btn-whatsapp,
+.emergency-btn-call {
+    padding: 14px 24px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+
+.emergency-btn-whatsapp {
+    background: #25D366;
+    color: #FFFFFF;
+}
+
+.emergency-btn-whatsapp:hover {
+    background: #1fb855;
+    transform: scale(1.05);
+}
+
+.emergency-btn-call {
+    background: #FFFFFF;
+    color: #E6000B;
+}
+
+.emergency-btn-call:hover {
+    background: #f0f0f0;
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .emergency-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .emergency-content {
+        flex-direction: column;
+    }
+    
+    .emergency-actions {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .emergency-btn-whatsapp,
+    .emergency-btn-call {
+        text-align: center;
+    }
+}

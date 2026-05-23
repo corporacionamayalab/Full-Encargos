@@ -1,13 +1,13 @@
-
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Full Encargos - Servicio de logística y mensajería">
-    <title>Full Encargos - Logística y Mensajería</title>
+    <title>Document</title>
     <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/portada.css">
+    <link rel="stylesheet" href="css/servi1.css">
+    <link rel="stylesheet" href="css/servi2.css">
+    <link rel="stylesheet" href="css/serv3.css">
     <link rel="stylesheet" href="css/footer.css">
 </head>
 <body>
@@ -27,12 +27,12 @@
 
             <nav class="nav-navigation" id="navNavigation" role="navigation" aria-label="Menú principal">
                 <ul class="nav-list">
-                    <li><a href="#inicio" class="nav-link">Inicio</a></li>
-                    <li><a href="servicios.html" class="nav-link">Servicios</a></li>
+                    <li><a href="index.html" class="nav-link">Inicio</a></li>
+                    <li><a href="index.html" class="nav-link">Servicios</a></li>
                     <li><a href="cobertura.html" class="nav-link">Cobertura</a></li>
                     <li><a href="tienda.html" class="nav-link">Tiendas</a></li>
                     <li><a href="nosotros.html" class="nav-link">Nosotros</a></li>
-                
+                    
                 </ul>
             </nav>
 
@@ -51,137 +51,165 @@
         </div>
     </header>
 
-    <section id="inicio" class="hero-section">
-    <!-- Carrusel de fondo -->
-    <div class="hero-carousel">
-        <div class="carousel-track">
-            <div class="carousel-slide active">
-                <img src="img/toma-1.jpg" alt="Repartidor de Full Encargos entregando paquete" loading="eager">
-            </div>
-            <div class="carousel-slide">
-                <img src="img/toma-2.jpg" alt="Logística y distribución rápida" loading="lazy">
-            </div>
-            <div class="carousel-slide">
-                <img src="img/toma-3.jpg" alt="Cobertura de envíos en toda la ciudad" loading="lazy">
-            </div>
-        </div>
-        
-        <!-- Overlay para mejorar legibilidad -->
-        <div class="carousel-overlay"></div>
-        
-        <!-- Controles del carrusel -->
-        <button class="carousel-btn prev" aria-label="Anterior imagen">❮</button>
-        <button class="carousel-btn next" aria-label="Siguiente imagen">❮</button>
-        
-        <!-- Indicadores -->
-        <div class="carousel-dots">
-            <span class="dot active" data-slide="0"></span>
-            <span class="dot" data-slide="1"></span>
-            <span class="dot" data-slide="2"></span>
-        </div>
-    </div>
-
-    <div class="hero-container">
-        <div class="hero-content">
+    <section class="services-hero">
+    <div class="services-hero-container">
+        <div class="services-hero-content">
             <span class="hero-badge">
-                <span class="badge-pulse"></span>
-                🚀 Mensajería Express y Distribución Local
+                <span class="badge-dot"></span>
+                Tu asistente personal de compras
             </span>
             
             <h1 class="hero-title">
-                Tus envíos llegan <span class="text-highlight">más rápido</span> y <span class="text-highlight-secondary">100% seguros</span>
+                ¿Necesitas algo y no puedes ir? 
+                <span class="text-highlight">Nosotros vamos por ti</span>
             </h1>
             
-            <p class="hero-subtitle">
-                Olvídate de las esperas y la incertidumbre. En <strong>Full Encargos</strong> recogemos, gestionamos y entregamos tus paquetes con la máxima prioridad. 
-                <span class="text-emphasis">Tu tiempo vale oro, nosotros lo respetamos.</span>
+            <p class="hero-description">
+                Te ayudamos a comprar lo que necesitas, gestionamos tus envíos y te lo llevamos 
+                hasta tu puerta. <strong>Sin estrés, sin vueltas, sin pérdidas de tiempo.</strong>
             </p>
 
-            <!-- Estadísticas que generan confianza -->
-            <div class="hero-stats">
-                <div class="stat-item">
-                    <span class="stat-number" data-target="98">0</span><span class="stat-symbol">%</span>
-                    <p class="stat-label">Entregas a tiempo</p>
-                </div>
-                <div class="stat-divider"></div>
-                <div class="stat-item">
-                    <span class="stat-number" data-target="5000">0</span><span class="stat-symbol">+</span>
-                    <p class="stat-label">Envíos realizados</p>
-                </div>
-                <div class="stat-divider"></div>
-                <div class="stat-item">
-                    <span class="stat-number" data-target="24">0</span><span class="stat-symbol">/7</span>
-                    <p class="stat-label">Disponibilidad</p>
-                </div>
-            </div>
-
-            <!-- Beneficios con iconos mejorados -->
-            <div class="info-highlights">
-                <div class="info-item">
-                    <span class="info-icon">⚡</span>
-                    <div class="info-text">
-                        <h3>Envíos Express</h3>
-                        <p>Entrega el mismo día sin excusas</p>
+            <div class="hero-services-grid">
+                <div class="hero-service-item">
+                    <span class="hero-service-icon">🛒</span>
+                    <div>
+                        <strong>Compramos por ti</strong>
+                        <p>Te ayudamos a comprar a distancia. Tú eliges, nosotros lo recogemos.</p>
                     </div>
                 </div>
-                <div class="info-item">
-                    <span class="info-icon">🛡️</span>
-                    <div class="info-text">
-                        <h3>Garantía Total</h3>
-                        <p>Tu paquete asegurado al 100%</p>
+                <div class="hero-service-item">
+                    <span class="hero-service-icon">📦</span>
+                    <div>
+                        <strong>Envíos y Deliverys</strong>
+                        <p>Llevamos tus paquetes a cualquier punto de la ciudad.</p>
                     </div>
                 </div>
-                <div class="info-item">
-                    <span class="info-icon">📍</span>
-                    <div class="info-text">
-                        <h3>Cobertura Completa</h3>
-                        <p>Llegamos donde otros no llegan</p>
+                <div class="hero-service-item">
+                    <span class="hero-service-icon">💬</span>
+                    <div>
+                        <strong>Atención Directa</strong>
+                        <p>WhatsApp y llamadas. Respuesta inmediata, sin robots.</p>
+                    </div>
+                </div>
+                <div class="hero-service-item">
+                    <span class="hero-service-icon">📍</span>
+                    <div>
+                        <strong>Cobertura Total</strong>
+                        <p>Llegamos a toda la ciudad. Sin excusas, sin límites.</p>
                     </div>
                 </div>
             </div>
 
-            <!-- Botones de acción con urgencia -->
             <div class="hero-actions">
-                <a href="#contacto" class="cta-primary">
-                    📦 Solicitar Envío Ahora
-                    <span class="cta-subtext">Respuesta inmediata</span>
+                <a href="https://wa.me/51999888777" class="btn-whatsapp" target="_blank" rel="noopener">
+                    <span class="btn-icon">💬</span>
+                    <span>
+                        <strong>Chatear por WhatsApp</strong>
+                        <small>Respuesta en minutos</small>
+                    </span>
                 </a>
-                <a href="#servicios" class="cta-secondary">
-                    Ver Todos los Servicios
-                    <span class="arrow">→</span>
+                <a href="tel:+51999888777" class="btn-call">
+                    <span class="btn-icon">📞</span>
+                    <span>
+                        <strong>Llamar Ahora</strong>
+                        <small>Cotización inmediata</small>
+                    </span>
                 </a>
             </div>
-            
-            <!-- Confianza adicional -->
-            <div class="trust-badges">
-                <span>✅ Sin costo de registro</span>
-                <span>✅ Cotización en 5 minutos</span>
-                <span>✅ Seguimiento en tiempo real</span>
-            </div>
-        </div>
 
-        <!-- Tarjeta flotante mejorada -->
-        <div class="hero-visual">
-            <div class="floating-card">
-                <div class="card-header">
-                    <span class="card-icon">💬</span>
-                    <span class="card-status">En línea ahora</span>
+            <div class="hero-trust">
+                <div class="trust-item">
+                    <span>✅</span> Te ayudamos a comprar
                 </div>
-                <h3>¿Urgencia?</h3>
-                <p>Chatea directamente con nosotros. Un agente está listo para ayudarte.</p>
-                <div class="card-features">
-                    <span>⏱️ Respuesta en 2 min</span>
-                    <span>📱 WhatsApp directo</span>
+                <div class="trust-item">
+                    <span>✅</span> Entrega en toda la ciudad
                 </div>
-                <a href="https://wa.me/51970302011" class="card-btn" target="_blank" rel="noopener">
-                    Chatear por WhatsApp 🚀
-                </a>
+                <div class="trust-item">
+                    <span>✅</span> Sin registros complicados
+                </div>
             </div>
         </div>
     </div>
 </section>
 
-<footer class="main-footer" role="contentinfo">
+<section class="how-it-works">
+    <div class="how-it-works-container">
+        <div class="section-header">
+            <span class="section-badge">Así de fácil</span>
+            <h2>Tú pides, <span class="text-highlight">nosotros hacemos</span></h2>
+            <p>No importa qué necesites. En 3 pasos lo tienes resuelto.</p>
+        </div>
+
+        <div class="steps-grid">
+            <div class="step-card">
+                <div class="step-number">1</div>
+                <div class="step-icon-wrapper">
+                    <span class="step-icon">💬</span>
+                </div>
+                <h3>Nos escribes</h3>
+                <p>Por WhatsApp o llamada nos dices qué necesitas comprar, enviar o cotizar.</p>
+                <div class="step-time">⏱️ 2 minutos</div>
+            </div>
+
+            <div class="step-connector">
+                <span class="connector-line"></span>
+            </div>
+
+            <div class="step-card">
+                <div class="step-number">2</div>
+                <div class="step-icon-wrapper">
+                    <span class="step-icon">🛒</span>
+                </div>
+                <h3>Lo gestionamos</h3>
+                <p>Compramos por ti, recogemos tu paquete o cotizamos tu producto. Tú sigues con tu día.</p>
+                <div class="step-time">⏱️ Lo que tardes en tomar un café</div>
+            </div>
+
+            <div class="step-connector">
+                <span class="connector-line"></span>
+            </div>
+
+            <div class="step-card">
+                <div class="step-number">3</div>
+                <div class="step-icon-wrapper">
+                    <span class="step-icon">📦</span>
+                </div>
+                <h3>Recibes en tu puerta</h3>
+                <p>Te lo llevamos a donde estés. Sin vueltas, sin estrés, sin perder tiempo.</p>
+                <div class="step-time">⏱️ Entrega express</div>
+            </div>
+        </div>
+
+        <div class="steps-cta">
+            <p>¿Listo para probarlo?</p>
+            <a href="https://wa.me/51999888777" class="btn-whatsapp-steps" target="_blank" rel="noopener">
+                💬 Escríbenos ahora
+            </a>
+        </div>
+    </div>
+</section>
+
+    <section class="emergency-banner">
+    <div class="emergency-container">
+        <div class="emergency-content">
+            <span class="emergency-icon">🚨</span>
+            <div>
+                <h2>¿Urgencia para hoy?</h2>
+                <p>No esperes más. Escríbenos ya y en minutos estamos solucionándolo.</p>
+            </div>
+        </div>
+        <div class="emergency-actions">
+            <a href="https://wa.me/51999888777" class="emergency-btn-whatsapp" target="_blank" rel="noopener">
+                💬 WhatsApp inmediato
+            </a>
+            <a href="tel:+51999888777" class="emergency-btn-call">
+                📞 Llamar ya
+            </a>
+        </div>
+    </div>
+</section>
+
+        <footer class="main-footer" role="contentinfo">
     <!-- Onda decorativa superior -->
     <div class="footer-wave">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 120" preserveAspectRatio="none">
@@ -304,7 +332,7 @@ Av. Winchazao Mza. a Lote. 11 a.H. los Laureles</span>
     </div>
 </footer>
 
+
     <script src="js/header.js"></script>
-    <script src="js/portada.js"></script>
-    <script src="js/footer.js"></script>
 </body>
+</html>

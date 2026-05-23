@@ -1,6 +1,5 @@
-
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +8,9 @@
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/portada.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="tiendas/tienda.css">
+    <link rel="stylesheet" href="tiendas/paso-2.css">
+    <link rel="stylesheet" href="tiendas/paso-3.css">
 </head>
 <body>
     <header class="main-header" role="banner">
@@ -27,12 +29,12 @@
 
             <nav class="nav-navigation" id="navNavigation" role="navigation" aria-label="Menú principal">
                 <ul class="nav-list">
-                    <li><a href="#inicio" class="nav-link">Inicio</a></li>
+                    <li><a href="index.html" class="nav-link">Inicio</a></li>
                     <li><a href="servicios.html" class="nav-link">Servicios</a></li>
                     <li><a href="cobertura.html" class="nav-link">Cobertura</a></li>
                     <li><a href="tienda.html" class="nav-link">Tiendas</a></li>
                     <li><a href="nosotros.html" class="nav-link">Nosotros</a></li>
-                
+                    
                 </ul>
             </nav>
 
@@ -50,137 +52,146 @@
 
         </div>
     </header>
-
-    <section id="inicio" class="hero-section">
-    <!-- Carrusel de fondo -->
-    <div class="hero-carousel">
-        <div class="carousel-track">
-            <div class="carousel-slide active">
-                <img src="img/toma-1.jpg" alt="Repartidor de Full Encargos entregando paquete" loading="eager">
-            </div>
-            <div class="carousel-slide">
-                <img src="img/toma-2.jpg" alt="Logística y distribución rápida" loading="lazy">
-            </div>
-            <div class="carousel-slide">
-                <img src="img/toma-3.jpg" alt="Cobertura de envíos en toda la ciudad" loading="lazy">
-            </div>
+    <!-- Lo que más nos piden -->
+<section class="popular-products">
+    <div class="popular-container">
+        <div class="section-header">
+            <span class="section-badge">Lo Más Pedido</span>
+            <h2>Lo que <span class="text-highlight">más compran</span> nuestros clientes</h2>
+            <p class="section-subtitle">Estos son los productos y categorías que más nos solicitan a diario.</p>
         </div>
-        
-        <!-- Overlay para mejorar legibilidad -->
-        <div class="carousel-overlay"></div>
-        
-        <!-- Controles del carrusel -->
-        <button class="carousel-btn prev" aria-label="Anterior imagen">❮</button>
-        <button class="carousel-btn next" aria-label="Siguiente imagen">❮</button>
-        
-        <!-- Indicadores -->
-        <div class="carousel-dots">
-            <span class="dot active" data-slide="0"></span>
-            <span class="dot" data-slide="1"></span>
-            <span class="dot" data-slide="2"></span>
-        </div>
-    </div>
-
-    <div class="hero-container">
-        <div class="hero-content">
-            <span class="hero-badge">
-                <span class="badge-pulse"></span>
-                🚀 Mensajería Express y Distribución Local
-            </span>
-            
-            <h1 class="hero-title">
-                Tus envíos llegan <span class="text-highlight">más rápido</span> y <span class="text-highlight-secondary">100% seguros</span>
-            </h1>
-            
-            <p class="hero-subtitle">
-                Olvídate de las esperas y la incertidumbre. En <strong>Full Encargos</strong> recogemos, gestionamos y entregamos tus paquetes con la máxima prioridad. 
-                <span class="text-emphasis">Tu tiempo vale oro, nosotros lo respetamos.</span>
-            </p>
-
-            <!-- Estadísticas que generan confianza -->
-            <div class="hero-stats">
-                <div class="stat-item">
-                    <span class="stat-number" data-target="98">0</span><span class="stat-symbol">%</span>
-                    <p class="stat-label">Entregas a tiempo</p>
-                </div>
-                <div class="stat-divider"></div>
-                <div class="stat-item">
-                    <span class="stat-number" data-target="5000">0</span><span class="stat-symbol">+</span>
-                    <p class="stat-label">Envíos realizados</p>
-                </div>
-                <div class="stat-divider"></div>
-                <div class="stat-item">
-                    <span class="stat-number" data-target="24">0</span><span class="stat-symbol">/7</span>
-                    <p class="stat-label">Disponibilidad</p>
-                </div>
+        <div class="popular-grid">
+            <div class="popular-card">
+                <span class="popular-icon">📱</span>
+                <h3>Celulares y Accesorios</h3>
+                <p>Equipos nuevos, fundas, cargadores, audífonos y protectores.</p>
             </div>
-
-            <!-- Beneficios con iconos mejorados -->
-            <div class="info-highlights">
-                <div class="info-item">
-                    <span class="info-icon">⚡</span>
-                    <div class="info-text">
-                        <h3>Envíos Express</h3>
-                        <p>Entrega el mismo día sin excusas</p>
-                    </div>
-                </div>
-                <div class="info-item">
-                    <span class="info-icon">🛡️</span>
-                    <div class="info-text">
-                        <h3>Garantía Total</h3>
-                        <p>Tu paquete asegurado al 100%</p>
-                    </div>
-                </div>
-                <div class="info-item">
-                    <span class="info-icon">📍</span>
-                    <div class="info-text">
-                        <h3>Cobertura Completa</h3>
-                        <p>Llegamos donde otros no llegan</p>
-                    </div>
-                </div>
+            <div class="popular-card">
+                <span class="popular-icon">💻</span>
+                <h3>Laptops y Computadoras</h3>
+                <p>Para trabajo, estudio o gaming. Nuevas y de segunda en buen estado.</p>
             </div>
-
-            <!-- Botones de acción con urgencia -->
-            <div class="hero-actions">
-                <a href="#contacto" class="cta-primary">
-                    📦 Solicitar Envío Ahora
-                    <span class="cta-subtext">Respuesta inmediata</span>
-                </a>
-                <a href="#servicios" class="cta-secondary">
-                    Ver Todos los Servicios
-                    <span class="arrow">→</span>
-                </a>
+            <div class="popular-card">
+                <span class="popular-icon">🔧</span>
+                <h3>Materiales de Construcción</h3>
+                <p>Cemento, fierros, tuberías, pintura y todo para tu obra o refacción.</p>
             </div>
-            
-            <!-- Confianza adicional -->
-            <div class="trust-badges">
-                <span>✅ Sin costo de registro</span>
-                <span>✅ Cotización en 5 minutos</span>
-                <span>✅ Seguimiento en tiempo real</span>
+            <div class="popular-card">
+                <span class="popular-icon">🛒</span>
+                <h3>Abarrotes por Mayor</h3>
+                <p>Arroz, azúcar, aceite, menestras y víveres para tu negocio o hogar.</p>
             </div>
-        </div>
-
-        <!-- Tarjeta flotante mejorada -->
-        <div class="hero-visual">
-            <div class="floating-card">
-                <div class="card-header">
-                    <span class="card-icon">💬</span>
-                    <span class="card-status">En línea ahora</span>
-                </div>
-                <h3>¿Urgencia?</h3>
-                <p>Chatea directamente con nosotros. Un agente está listo para ayudarte.</p>
-                <div class="card-features">
-                    <span>⏱️ Respuesta en 2 min</span>
-                    <span>📱 WhatsApp directo</span>
-                </div>
-                <a href="https://wa.me/51970302011" class="card-btn" target="_blank" rel="noopener">
-                    Chatear por WhatsApp 🚀
-                </a>
+            <div class="popular-card">
+                <span class="popular-icon">👕</span>
+                <h3>Ropa y Calzado</h3>
+                <p>Zapatillas, polos, pantalones, casacas de marcas reconocidas.</p>
+            </div>
+            <div class="popular-card">
+                <span class="popular-icon">🏠</span>
+                <h3>Electrodomésticos</h3>
+                <p>Refrigeradoras, cocinas, lavadoras, microondas y más artefactos.</p>
+            </div>
+            <div class="popular-card">
+                <span class="popular-icon">💊</span>
+                <h3>Medicinas y Farmacia</h3>
+                <p>Medicamentos, vitaminas, suplementos y productos de cuidado personal.</p>
+            </div>
+            <div class="popular-card">
+                <span class="popular-icon">🎁</span>
+                <h3>Regalos y Detalles</h3>
+                <p>Para cumpleaños, aniversarios, San Valentín o cualquier ocasión especial.</p>
             </div>
         </div>
     </div>
 </section>
+<!-- Tiendas donde compramos -->
+<section class="trusted-stores">
+    <div class="trusted-container">
+        <div class="section-header">
+            <span class="section-badge">Confianza</span>
+            <h2>Compramos en <span class="text-highlight">tiendas confiables</span></h2>
+            <p class="section-subtitle">Solo trabajamos con establecimientos formales y de buena reputación.</p>
+        </div>
+        <div class="trusted-grid">
+            <div class="trusted-card">
+                <span class="trusted-icon">🏬</span>
+                <h3>Centros Comerciales</h3>
+                <p>Mall Plaza, Real Plaza, Open Plaza y principales centros comerciales.</p>
+            </div>
+            <div class="trusted-card">
+                <span class="trusted-icon">🏪</span>
+                <h3>Supermercados</h3>
+                <p>Metro, Plaza Vea, Tottus, Wong y principales cadenas de abarrotes.</p>
+            </div>
+            <div class="trusted-card">
+                <span class="trusted-icon">🔧</span>
+                <h3>Homecenters</h3>
+                <p>Sodimac, Maestro, Promart para construcción, ferretería y acabados.</p>
+            </div>
+            <div class="trusted-card">
+                <span class="trusted-icon">💊</span>
+                <h3>Farmacias</h3>
+                <p>Inkafarma, Mifarma, Arcángel y boticas autorizadas.</p>
+            </div>
+            <div class="trusted-card">
+                <span class="trusted-icon">📱</span>
+                <h3>Tiendas de Tecnología</h3>
+                <p>Tiendas oficiales, distribuidores autorizados y retail de tecnología.</p>
+            </div>
+            <div class="trusted-card">
+                <span class="trusted-icon">👕</span>
+                <h3>Tiendas de Ropa</h3>
+                <p>Tiendas de marca, boutiques y centros de moda en toda la ciudad.</p>
+            </div>
+        </div>
+        <div class="trusted-note">
+            <p>💡 <strong>¿Tu tienda de confianza no está en la lista?</strong> No hay problema. Compramos en cualquier tienda formal que nos indiques.</p>
+        </div>
+    </div>
+</section>
 
+<!-- ¿Por qué comprar con nosotros? -->
+<section class="why-buy">
+    <div class="why-buy-container">
+        <div class="section-header">
+            <span class="section-badge">Ventajas</span>
+            <h2>¿Por qué <span class="text-highlight">comprar con nosotros</span>?</h2>
+            <p class="section-subtitle">No solo compramos, te damos la mejor experiencia.</p>
+        </div>
+        <div class="why-buy-grid">
+            <div class="why-buy-card">
+                <span class="why-buy-icon">🏪</span>
+                <h3>Compramos en cualquier tienda</h3>
+                <p>Tú eliges la tienda de tu preferencia. Si no sabes dónde, nosotros te recomendamos las mejores opciones.</p>
+            </div>
+            <div class="why-buy-card">
+                <span class="why-buy-icon">📸</span>
+                <h3>Te mostramos antes de comprar</h3>
+                <p>Te enviamos fotos y precios en tiempo real. Tú decides si compramos o no.</p>
+            </div>
+            <div class="why-buy-card">
+                <span class="why-buy-icon">💰</span>
+                <h3>Buscamos el mejor precio</h3>
+                <p>Cotizamos en varias tiendas para que obtengas el mejor precio del mercado.</p>
+            </div>
+            <div class="why-buy-card">
+                <span class="why-buy-icon">🔍</span>
+                <h3>Revisamos la calidad</h3>
+                <p>Verificamos que el producto esté en buen estado antes de comprarlo.</p>
+            </div>
+            <div class="why-buy-card">
+                <span class="why-buy-icon">📦</span>
+                <h3>Entrega rápida y segura</h3>
+                <p>Te lo llevamos a tu puerta. Sin vueltas, sin demoras, sin estrés.</p>
+            </div>
+            <div class="why-buy-card">
+                <span class="why-buy-icon">💬</span>
+                <h3>Comunicación constante</h3>
+                <p>Te mantenemos informado en cada paso. Sabes todo en tiempo real.</p>
+            </div>
+        </div>
+    </div>
+</section>
 <footer class="main-footer" role="contentinfo">
     <!-- Onda decorativa superior -->
     <div class="footer-wave">
@@ -303,8 +314,5 @@ Av. Winchazao Mza. a Lote. 11 a.H. los Laureles</span>
         </div>
     </div>
 </footer>
-
-    <script src="js/header.js"></script>
-    <script src="js/portada.js"></script>
-    <script src="js/footer.js"></script>
 </body>
+</html>

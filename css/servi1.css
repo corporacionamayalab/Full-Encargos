@@ -1,0 +1,386 @@
+/* =============================================
+   HERO DE SERVICIOS - DISEÑO PREMIUM
+   ============================================= */
+.services-hero {
+    background: #0A0908;
+    padding: 100px 24px 90px;
+    position: relative;
+    overflow: hidden;
+    isolation: isolate;
+}
+
+/* Efecto de cuadrícula de fondo */
+.services-hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: 
+        linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+    background-size: 60px 60px;
+    z-index: 0;
+}
+
+/* Degradados decorativos */
+.services-hero::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -20%;
+    width: 700px;
+    height: 700px;
+    background: radial-gradient(circle, rgba(230, 0, 11, 0.1) 0%, transparent 60%);
+    border-radius: 50%;
+    z-index: 0;
+    animation: rotate-glow 20s linear infinite;
+}
+
+@keyframes rotate-glow {
+    from { transform: rotate(0deg) scale(1); }
+    50% { transform: rotate(180deg) scale(1.3); }
+    to { transform: rotate(360deg) scale(1); }
+}
+
+.services-hero-container {
+    max-width: 900px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+/* =============================================
+   CONTENIDO CENTRADO
+   ============================================= */
+.services-hero-content {
+    text-align: center;
+    color: #FFFFFF;
+}
+
+/* Badge mejorado */
+.hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: rgba(244, 205, 59, 0.08);
+    border: 1px solid rgba(244, 205, 59, 0.25);
+    color: #F4CD3B;
+    padding: 10px 22px;
+    border-radius: 50px;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 28px;
+    backdrop-filter: blur(10px);
+}
+
+.badge-dot {
+    width: 9px;
+    height: 9px;
+    background: #22c55e;
+    border-radius: 50%;
+    box-shadow: 0 0 12px #22c55e;
+    animation: pulse-dot 2s infinite;
+}
+
+@keyframes pulse-dot {
+    0%, 100% { opacity: 1; transform: scale(1); box-shadow: 0 0 8px #22c55e; }
+    50% { opacity: 0.6; transform: scale(1.5); box-shadow: 0 0 20px #22c55e; }
+}
+
+/* Título con impacto */
+.hero-title {
+    font-size: clamp(34px, 5.5vw, 52px);
+    font-weight: 900;
+    line-height: 1.1;
+    margin-bottom: 24px;
+    letter-spacing: -0.5px;
+}
+
+.text-highlight {
+    color: #E6000B;
+    position: relative;
+    display: inline-block;
+}
+
+.text-highlight::after {
+    content: '';
+    position: absolute;
+    bottom: 2px;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: rgba(230, 0, 11, 0.25);
+    border-radius: 2px;
+}
+
+/* Descripción */
+.hero-description {
+    font-size: 17px;
+    color: rgba(255, 255, 255, 0.75);
+    line-height: 1.7;
+    margin-bottom: 44px;
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 400;
+}
+
+.hero-description strong {
+    color: #F4CD3B;
+    font-weight: 700;
+}
+
+/* =============================================
+   GRID DE SERVICIOS - NUEVO DISEÑO
+   ============================================= */
+.hero-services-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 14px;
+    margin-bottom: 44px;
+    text-align: center;
+}
+
+.hero-service-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    padding: 24px 16px;
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-service-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, #E6000B, transparent);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.hero-service-item:hover {
+    background: rgba(255, 255, 255, 0.05);
+    border-color: rgba(230, 0, 11, 0.3);
+    transform: translateY(-6px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.hero-service-item:hover::before {
+    opacity: 1;
+}
+
+.hero-service-icon {
+    font-size: 36px;
+    transition: transform 0.4s ease;
+}
+
+.hero-service-item:hover .hero-service-icon {
+    transform: scale(1.2) rotate(-10deg);
+}
+
+.hero-service-item strong {
+    font-size: 14px;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+.hero-service-item p {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.5);
+    margin: 0;
+    line-height: 1.4;
+}
+
+/* =============================================
+   BOTONES - MÁS AGRESIVOS
+   ============================================= */
+.hero-actions {
+    display: flex;
+    gap: 14px;
+    margin-bottom: 32px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.btn-whatsapp,
+.btn-call {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 18px 32px;
+    border-radius: 16px;
+    text-decoration: none;
+    transition: all 0.35s cubic-bezier(0.25, 0.8, 0.25, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Efecto brillo */
+.btn-whatsapp::after,
+.btn-call::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255,255,255,0.15) 0%, transparent 60%);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.btn-whatsapp:hover::after,
+.btn-call:hover::after {
+    opacity: 1;
+}
+
+.btn-whatsapp {
+    background: #25D366;
+    color: #FFFFFF;
+    box-shadow: 0 4px 20px rgba(37, 211, 102, 0.2);
+}
+
+.btn-whatsapp:hover {
+    background: #1fb855;
+    transform: translateY(-4px);
+    box-shadow: 0 15px 40px rgba(37, 211, 102, 0.4);
+}
+
+.btn-call {
+    background: #E6000B;
+    color: #FFFFFF;
+    box-shadow: 0 4px 20px rgba(230, 0, 11, 0.2);
+}
+
+.btn-call:hover {
+    background: #d4000a;
+    transform: translateY(-4px);
+    box-shadow: 0 15px 40px rgba(230, 0, 11, 0.4);
+}
+
+.btn-icon {
+    font-size: 28px;
+    position: relative;
+    z-index: 1;
+}
+
+.btn-whatsapp strong,
+.btn-call strong {
+    display: block;
+    font-size: 16px;
+    position: relative;
+    z-index: 1;
+}
+
+.btn-whatsapp small,
+.btn-call small {
+    font-size: 12px;
+    opacity: 0.85;
+    position: relative;
+    z-index: 1;
+}
+
+/* =============================================
+   SELLOS DE CONFIANZA - ESTILO NUEVO
+   ============================================= */
+.hero-trust {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 8px;
+}
+
+.trust-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.55);
+    font-weight: 500;
+    padding: 8px 16px;
+    background: rgba(255, 255, 255, 0.02);
+    border-radius: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: all 0.3s ease;
+}
+
+.trust-item:hover {
+    background: rgba(255, 255, 255, 0.05);
+    border-color: rgba(255, 255, 255, 0.15);
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* =============================================
+   RESPONSIVE
+   ============================================= */
+@media (max-width: 992px) {
+    .hero-services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .services-hero {
+        padding: 70px 18px 60px;
+    }
+    
+    .hero-title {
+        font-size: 28px;
+    }
+    
+    .hero-description {
+        font-size: 15px;
+        margin-bottom: 32px;
+    }
+    
+    .hero-actions {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .btn-whatsapp,
+    .btn-call {
+        width: 100%;
+        justify-content: center;
+        max-width: 350px;
+        padding: 16px 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-services-grid {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+    
+    .hero-title {
+        font-size: 24px;
+    }
+    
+    .hero-badge {
+        font-size: 11px;
+        padding: 8px 16px;
+    }
+    
+    .hero-trust {
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+    }
+    
+    .trust-item {
+        width: 100%;
+        justify-content: center;
+    }
+}
