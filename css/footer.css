@@ -77,8 +77,8 @@
 }
 
 .footer-logo {
-    max-height: 50px;
-    width: auto;
+    max-height: 150px;
+    width: 150px;
     margin-bottom: 20px;
 }
 
@@ -371,4 +371,21 @@
         width: 16px;
         height: 16px;
     }
+}
+
+/* =============================================
+   RUC EN FOOTER
+   ============================================= */
+.footer-ruc {
+    margin-top: 4px;
+}
+
+.footer-ruc span strong {
+    font-weight: 700;
+    color: var(--amarillo-logo, #F4CD3B);
+    letter-spacing: 0.5px;
+}
+
+.footer-ruc .contact-icon {
+    font-size: 1rem;
 }
